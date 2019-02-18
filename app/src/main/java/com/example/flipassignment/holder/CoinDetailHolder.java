@@ -28,6 +28,17 @@ public class CoinDetailHolder {
     @SerializedName("public_interest_score")
     @Expose
     private Double publicInterestScore;
+    @SerializedName("last_updated")
+    @Expose
+    String lastUpdated;
+
+    public String getLastUpdated() {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(String lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
 
     public String getId() {
         return id;
